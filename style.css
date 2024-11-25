@@ -31,8 +31,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: #55666E;
-    width: 5px;
-    height: 5px;
 }
 
 header{
@@ -185,11 +183,24 @@ h2{
 .main_content{
     display: flex;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 190px;
+
+    padding-bottom: 90px;
+    
 }
 
-#main{
-    margin-bottom: 90px;
+section{
+    margin-bottom: 180px;
+}
+
+.product_img{
+    width: 447px;
+    height: 277px;
+}
+
+.product_text{
+    color: white;
+    font-size: 32px;
+    font-family: "Cyrge";
+    font-weight: 600;
 }
 
