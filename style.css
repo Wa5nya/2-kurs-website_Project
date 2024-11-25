@@ -16,7 +16,23 @@
 
 body {
     background-color: #0D2126;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    overflow-y: visible;
+}
+
+body::-webkit-scrollbar {
+    background-color: #0D2126;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #55666E;
+    width: 5px;
+    height: 5px;
 }
 
 header{
@@ -169,6 +185,8 @@ h2{
 .main_content{
     display: flex;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 190px;
 }
 
 #main{
