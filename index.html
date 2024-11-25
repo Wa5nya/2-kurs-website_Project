@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <ul>
+                <li>
+                    <div class="menu">
+                        <img src="img/logo.svg" alt="logo" class="logo">
+                        <a href="javascript:void(0)" class="closeBtn">
+                            <div class="menu_inter" onmouseover="menu_img.src='img/menu_red.svg'" onmouseleave="this.src='img/menu.svg'" >
+                                <img src="img/menu.svg" alt="menu" class="menu_img">
+                                <h4>Меню</h4>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="head_contact">
+                        <h4 class="red">Москва</h4>
+                        <a href="">
+                            <h4>+7 955 634 45-67</h4>
+                        </a>
+                        <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                        <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <section id="main">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1 class="red">Мы знаем толк!</h1>
+                    <h3 class="white">Покраска машин</h3>
+                    <button class="request_btn" onclick="openForm()">Оставить заявку</button>
+                    <!-- <div class="form" id="myForm">
+                        <form action="#" class="form_request">
+                          <h1>Подписаться</h1>
+                          <label for="name"><b>Имя</b></label>
+                          <input type="text" placeholder="Ваше имя" name="name" required>
+                          <label for="email"><b>Е-мейл</b></label>
+                          <input type="text" placeholder="Ваш е-мейл" name="email" required>
+                          <button type="submit" class="btn">Отправить</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                        </form>
+                      </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2 class="white">Услуги</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/odnoton.jpg" alt="blue_car">
+                    <h3>Покраска автомобиля однотон</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

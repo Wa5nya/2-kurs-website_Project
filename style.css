@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Cyrge;
+    src: url(fonts/Cygre-Regular.ttf);
+}
+
+@font-face {
+    font-family: RussoOne;
+    src: url(fonts/RussoOne-Regular.ttf);
+}
+
+.container{
+    margin: 0 auto ;
+    padding: 0 ;
+    width: 1098px;
+}
+
+body {
+    background-color: #0D2126;
+    overflow: hidden;
+}
+
+header{
+    margin-bottom: 90px;
+}
+
+h4 {
+    font-family: 'RussoOne';
+    color: white;
+    font-size: 24px;
+    margin: 0 30px 0 30px;
+    height: 29px;
+}
+
+h4:hover{
+    color: #C7080C;
+}
+
+.red {
+    color: #C7080C;
+}
+
+.white{
+    color: white;
+}
+
+.menu_img{
+    object-fit: none;
+    margin: 0 ;
+}
+
+.logo{
+    width: 175px;
+    height: 160px;
+}
+
+.contact_img{
+    width: 64px;
+    height: 64px;
+    color: white;
+}
+
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu:hover h4{
+    color:#C7080C;
+}
+
+.menu:hover a img{
+    content: url(img/menu_red.svg);
+}
+
+.menu_inter{
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 30px;
+}
+
+
+.head_contact{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contact_img{
+    margin: 0  0 0 30px ;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.background {
+    background-image: url(img/fog.png);
+    filter: blur(5px);
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "RussoOne";
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "RussoOne";
+    font-size: 32px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+h2{
+    font-family: "RussoOne";
+    font-size: 45px;
+}
+
+.form_request{
+    visibility: hidden;
+}
+
+.request_btn{
+    background-color: transparent;
+    color: white;
+    border: white 2px solid;
+    font-size: 24px;
+    font-family: "Cyrge";
+    padding:  18px 42px;
+    width: 282px;
+    height: 64px;
+}
+
+.request_btn:hover{
+    color: #C7080C;
+    border-color: #C7080C;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_content{
+    display: flex;
+    align-items: center;
+}
+
+#main{
+    margin-bottom: 90px;
+}
+
