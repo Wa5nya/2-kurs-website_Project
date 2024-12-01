@@ -20,6 +20,11 @@ body {
     overflow-y: hidden;
 }
 
+p {
+    font-family: "Cyrge";
+    font-size: 24px;
+}
+
 body{
     overflow-y: visible;
 }
@@ -193,14 +198,101 @@ section{
 }
 
 .product_img{
-    width: 447px;
-    height: 277px;
+    width: 443px;
+    height: 319px;
 }
 
 .product_text{
     color: white;
     font-size: 32px;
     font-family: "Cyrge";
-    font-weight: 600;
+    font-weight: 500;
+    margin:  22px 60px  22px 60px;
+    text-align: right;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.testimonials {
+    text-align: center;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+ .testimonials .btn {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: white 2px solid;
+ }
+ .testimonials .btn:hover{
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer;
+ }
+ .testimonials .btn.next {
+    right: 15px;
+ }
+ .testimonials .btn.prev {
+    left: 15px;
+ }
+
+ .scroller {
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+ }
+ .item {
+    min-width: 100%;
+    min-height: 200px; /* To start with */
+    background-color: #0D2126; /* For demo */
+    background-color: #0D2126; /* Change the value to white */
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ .item {
+    /* Здесь существующие стили */
+    scroll-snap-align: center;
+ }
+ .card {
+    padding-top: 26px;
+    border: white solid 2px;
+    z-index: 1;
+    width: 965px;
+    height: 422px;
+    display: flex;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .card_text{
+    text-align: right;
+ }
+
+ .card p {
+    line-height: 1.6;
+ }
+
+ .card span {
+    color: teal;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+ }
