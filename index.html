@@ -6,6 +6,7 @@
     <title>Dying cars</title>
     <link rel="stylesheet" href="style.css">
     <script src="action.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -72,15 +73,17 @@
                 <div class="scroller">
                 <span class="btn prev">&lt;</span>
                 <span class="btn next">&gt;</span>
-                    <div class="item">
-                        <div class="card">
-                            <img src="img/odnoton.jpg" alt="blue_car" class="product_img">
-                            <div class="card_text">
-                                <p class="product_text">Покраска автомобиля однотон</p>
-                                <p class="white">Давно хотели сменить цвет своего авто? Мы поможем! Красим качественной краской; клеим яркие, цветные плёнки. Аэрография, Винилография</p>
+                        <a href="">
+                            <div class="item">
+                                <div class="card">
+                                    <img src="img/odnoton.jpg" alt="blue_car" class="product_img">
+                                    <div class="card_text">
+                                        <p class="product_text">Покраска автомобиля однотон</p>
+                                        <p class="white">Давно хотели сменить цвет своего авто? Мы поможем! Красим качественной краской; клеим яркие, цветные плёнки. Аэрография, Винилография</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>
                     <div class="item">
                         <div class="card">
                             <img src="img/vinilografia.jpg" alt="blue_car" class="product_img">
@@ -92,19 +95,22 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="testimonial3.jpg" alt="Imani">
                         <div class="card">
                             <img src="img/vinilografia.jpg" alt="blue_car" class="product_img">
                             <div class="card_text">
-                                <p class="product_text">Дизайн</p>
-                                <p class="white">Хотите разнообразить вид своего автомобиля? Сделаем дизайн на любой вид транспорта.
-                                    Множество готовых шаблонов на выбор и разработка личного эскиза.</p>
+                                <p class="product_text">Брендирование</p>
+                                <p class="white">Делаем проекты "под ключ" от дизайна до нанесения на любой вид транспорта</p>
                             </div>
                         </div>
                     </div>
                 </div>
              </div>
-
+        </section>
+        <section id="advantages">
+            <div class="background"></div>
+            <div class="adv_content">
+                
+            </div>        
         </section>
     </div>
     <script>
@@ -123,6 +129,11 @@
         function scrollToPrevItem() {
             scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
         }
+
+        ScrollReveal().reveal('.scroller', {
+        delay: 500,
+        },)
+
      </script>
 </body>
 </html>

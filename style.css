@@ -217,7 +217,10 @@ section{
 }
 
 
-
+a {
+    min-width: 100%;
+    min-height: 200px;
+}
 
 
 .testimonials {
@@ -262,14 +265,11 @@ section{
     background-color: #0D2126; /* Change the value to white */
     display: flex;
     justify-content: space-between;
- }
-
-
- .item {
-    /* Здесь существующие стили */
     scroll-snap-align: center;
-    
  }
+
+
+
  .card {
     padding: 26px;
     border: white solid 2px;
@@ -277,8 +277,7 @@ section{
     width: 965px;
 
     display: flex;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
  }
