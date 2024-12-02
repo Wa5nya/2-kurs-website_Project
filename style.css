@@ -207,8 +207,8 @@ section{
     font-size: 32px;
     font-family: "Cyrge";
     font-weight: 500;
-    margin:  22px 60px  22px 60px;
     text-align: right;
+    margin: 0;
 }
 
 .cards{
@@ -268,13 +268,14 @@ section{
  .item {
     /* Здесь существующие стили */
     scroll-snap-align: center;
+    
  }
  .card {
-    padding-top: 26px;
+    padding: 26px;
     border: white solid 2px;
     z-index: 1;
     width: 965px;
-    height: 422px;
+
     display: flex;
     margin-left: 24px;
     margin-right: 24px;
