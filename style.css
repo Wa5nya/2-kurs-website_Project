@@ -353,3 +353,25 @@ section{
     flex-direction: column;
     align-items: center;
 }
+
+
+.ex{
+    border: solid white 2px;
+    padding: 20px;
+    width: 306px;
+    height: 272px;
+}
+
+
+.ex:hover{
+    filter: brightness(35%);
+}
+
+.port_content{
+    display: grid;
+    width: 1098px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
