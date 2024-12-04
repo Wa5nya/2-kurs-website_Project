@@ -14,6 +14,10 @@
     width: 1098px;
 }
 
+div {
+    box-sizing: border-box !important; 
+}
+
 body {
     background-color: #0D2126;
     overflow-x: hidden;
@@ -226,8 +230,9 @@ section{
 .testimonials {
     text-align: center;
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 66px;
+    
+
  }
  .testimonials .btn {
     position: absolute;
@@ -275,7 +280,7 @@ section{
     border: white solid 2px;
     z-index: 1;
     width: 965px;
-
+    position: static;
     display: flex;
     margin: 0;
     display: flex;
@@ -376,4 +381,34 @@ section{
 
 #portfolio{
     margin-bottom: 90px;
+}
+
+.review_1{
+    width: 346px;
+    height: 421px;
+    background-image: url(img/revi_1.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    border: #C7080C solid 2px;
+
+}
+
+.quot{
+    object-fit: none;
+    position: absolute;
+}
+
+h5{
+    font-size: 24px;
+    font-family: "Cyrge";
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.review_1 p {
+    font-size: 14px;
+    line-height: 1.7;
+
 }
