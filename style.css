@@ -360,6 +360,7 @@ section{
     padding: 20px;
     width: 306px;
     height: 272px;
+    margin-bottom: 30px;
 }
 
 
@@ -373,5 +374,6 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
-
+#portfolio{
+    margin-bottom: 90px;
+}
