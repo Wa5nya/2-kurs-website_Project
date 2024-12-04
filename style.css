@@ -360,6 +360,36 @@ section{
 }
 
 
+.let {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.let p{
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    width: 230px;
+    text-align: center;
+}
+
+.port_content :hover  p {
+        animation: ani1 0.5s forwards;
+    
+}
+
+@keyframes ani1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .ex{
     border: solid white 2px;
     padding: 20px;
@@ -383,7 +413,7 @@ section{
     margin-bottom: 90px;
 }
 
-.review_1{
+.review{
     width: 346px;
     height: 421px;
     background-image: url(img/revi_1.png);
@@ -392,7 +422,16 @@ section{
     flex-direction: column;
     padding: 23px;
     border: #C7080C solid 2px;
+}
 
+#rev_2{
+    background-image: url(img/revi_2.png);
+    margin-top: 50px;
+}
+
+#rev_3{
+    background-image: url(img/revi_3.png) ;
+    margin-top: 100px;
 }
 
 .quot{
@@ -407,8 +446,46 @@ h5{
     margin-bottom: 25px;
 }
 
-.review_1 p {
+.review p {
     font-size: 14px;
     line-height: 1.7;
 
 }
+
+.review_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#reviews{
+    padding-top: 90px;
+    margin-bottom: 90px;
+}
+
+.cont_bold{
+    font-weight: 600;
+}
+
+.contact_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact_text a p:hover{
+    color: #C7080C;
+}
+
+.contact_text p{
+    width: 250px;
+}
+
+/* a {
+    font-size: 24px;
+    font-family: "Cyrge";
+    margin: 0;
+    height: 50px;
+} */
+
+.contact_content{
+    display: flex;
+    justify-content: space-between}
