@@ -18,6 +18,8 @@ div {
     box-sizing: border-box !important; 
 }
 
+
+
 body {
     background-color: #0D2126;
     overflow-x: hidden;
@@ -199,6 +201,8 @@ h2{
 
 section{
     margin-bottom: 180px;
+    opacity: 0; transform: translateY(50px); 
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .product_img{
@@ -304,7 +308,9 @@ section{
 
 #products {
     margin-bottom: 140px;
+    
 }
+
 
 .background.two{
     background-image: url(img/fog.png);
@@ -410,6 +416,7 @@ section{
 }
 
 #portfolio{
+    margin-top: 90px;
     margin-bottom: 90px;
 }
 
@@ -500,3 +507,8 @@ footer{
     display: flex;
     align-items: center;
 }
+
+#contacts{
+    margin-top: 90px;
+}
+

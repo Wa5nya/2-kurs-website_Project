@@ -42,17 +42,6 @@
                     <h1 class="red">Мы знаем толк!</h1>
                     <h3 class="white">Покраска машин</h3>
                     <button class="request_btn" onclick="openForm()">Оставить заявку</button>
-                    <!-- <div class="form" id="myForm">
-                        <form action="#" class="form_request">
-                          <h1>Подписаться</h1>
-                          <label for="name"><b>Имя</b></label>
-                          <input type="text" placeholder="Ваше имя" name="name" required>
-                          <label for="email"><b>Е-мейл</b></label>
-                          <input type="text" placeholder="Ваш е-мейл" name="email" required>
-                          <button type="submit" class="btn">Отправить</button>
-                          <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-                        </form>
-                      </div> -->
                 </div>
             </div>
         </section>
@@ -232,15 +221,31 @@
        
         function scrollToNextItem() {
             scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
-        }
+        };
         function scrollToPrevItem() {
             scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
-        }
+        };
 
-        ScrollReveal().reveal('.scroller', {
-        delay: 500,
-        },)
+        // ScrollReveal().reveal('.scroller', {
+        // delay: 500,
+        // },)
 
+        document.addEventListener('DOMContentLoaded', function() {
+            let blocks = document.querySelectorAll('section');
+            function checkBlocksVisibility() {
+                let windowHeight = window.innerHeight;
+                blocks.forEach(block => {
+                    let blockPosition = block.getBoundingClientRect().top;
+                    if (blockPosition < windowHeight - 100) {
+                        block.style.opacity = "1";
+                        block.style.transform = "translateY(0)";
+                    }
+                });
+            }
+            checkBlocksVisibility();
+            window.addEventListener('scroll', function() { checkBlocksVisibility(); });
+        });
      </script>
+
 </body>
 </html>
