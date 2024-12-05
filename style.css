@@ -8,6 +8,34 @@
     src: url(fonts/RussoOne-Regular.ttf);
 }
 
+
+/* #products {
+    margin-bottom: 140px;
+}
+
+#portfolio{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#reviews{
+    padding-top: 90px;
+    margin-bottom: 90px;
+}
+
+#contacts{
+    margin-top: 90px;
+} */
+
+section{
+
+    opacity: 0; transform: translateY(50px); 
+    transition: transform 0.5s, opacity 0.5s;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
 .container{
     margin: 0 auto ;
     padding: 0 ;
@@ -17,7 +45,6 @@
 div {
     box-sizing: border-box !important; 
 }
-
 
 
 body {
@@ -44,9 +71,32 @@ body::-webkit-scrollbar-thumb {
     background-color: #55666E;
 }
 
-header{
-    margin-bottom: 90px;
+.background {
+    background-image: url(img/fog.png);
+    filter: blur(5px);
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.background.two{
+    height: 650px;
+}
+
+
+.background.three{
+    height: 1000px;
+}
+
+
+
+/* Text */
 
 h4 {
     font-family: 'RussoOne';
@@ -60,6 +110,27 @@ h4:hover{
     color: #C7080C;
 }
 
+h1 {
+    font-family: "RussoOne";
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "RussoOne";
+    font-size: 32px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+h2{
+    font-family: "RussoOne";
+    font-size: 45px;
+    margin-bottom: 90px;
+    margin-top: 0;
+}
+
 .red {
     color: #C7080C;
 }
@@ -67,6 +138,16 @@ h4:hover{
 .white{
     color: white;
 }
+
+a{
+    text-decoration: none;
+}
+
+
+/* Header */
+/* header{
+    margin-bottom: 90px;
+} */
 
 .menu_img{
     object-fit: none;
@@ -83,8 +164,6 @@ h4:hover{
     height: 64px;
     color: white;
 }
-
-
 
 .menu{
     display: flex;
@@ -126,48 +205,8 @@ ul{
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
 
-
-.background {
-    background-image: url(img/fog.png);
-    filter: blur(5px);
-    position:absolute;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    font-family: "RussoOne";
-    font-size: 64px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-family: "RussoOne";
-    font-size: 32px;
-    margin-bottom: 50px;
-    margin-top: 0px;
-    font-weight: 500;
-}
-
-h2{
-    font-family: "RussoOne";
-    font-size: 45px;
-    margin-bottom: 90px;
-}
-
-.form_request{
-    visibility: hidden;
-}
+/* Main */
 
 .request_btn{
     background-color: transparent;
@@ -199,11 +238,8 @@ h2{
     
 }
 
-section{
-    margin-bottom: 180px;
-    opacity: 0; transform: translateY(50px); 
-    transition: transform 0.5s, opacity 0.5s;
-}
+
+/* Products */
 
 .product_img{
     width: 443px;
@@ -306,25 +342,11 @@ section{
     text-transform: uppercase;
  }
 
-#products {
-    margin-bottom: 140px;
-    
-}
 
 
-.background.two{
-    background-image: url(img/fog.png);
-    filter: blur(5px);
-    position:absolute;
-    background-size: cover;
-    background-position: center;
-    height: 650px;
-    width: 100%;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+/* Advantages */
+
 
 .adv{
     font-family: "Cyrge";
@@ -347,7 +369,6 @@ section{
 }
 
 .adv_up{
-    margin-top: 90px;
     display: flex;
     justify-content: space-between;
     width: 1098px;
@@ -356,7 +377,6 @@ section{
 
 .adv_down{
     display: flex;
-    margin-bottom: 90px;
 }
 
 .adv_content{
@@ -365,6 +385,8 @@ section{
     align-items: center;
 }
 
+
+/* Portfolio */
 
 .let {
     color: white;
@@ -415,10 +437,10 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#portfolio{
-    margin-top: 90px;
-    margin-bottom: 90px;
-}
+
+
+
+/* Review */
 
 .review{
     width: 346px;
@@ -464,10 +486,10 @@ h5{
     justify-content: space-between;
 }
 
-#reviews{
-    padding-top: 90px;
-    margin-bottom: 90px;
-}
+
+
+
+/* Contacts */
 
 .cont_bold{
     font-weight: 600;
@@ -486,19 +508,13 @@ h5{
     width: 250px;
 }
 
-/* a {
-    font-size: 24px;
-    font-family: "Cyrge";
-    margin: 0;
-    height: 50px;
-} */
-
 .contact_content{
     display: flex;
     justify-content: space-between}
 
 
 footer{
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
 }
@@ -508,7 +524,5 @@ footer{
     align-items: center;
 }
 
-#contacts{
-    margin-top: 90px;
-}
+
 
