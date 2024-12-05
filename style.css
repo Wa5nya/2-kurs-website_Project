@@ -489,3 +489,14 @@ h5{
 .contact_content{
     display: flex;
     justify-content: space-between}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_content{
+    display: flex;
+    align-items: center;
+}
