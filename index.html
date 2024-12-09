@@ -11,32 +11,45 @@
 <body>
     <div class="background"></div>
     <div class="container">
-        <header>
-            <ul>
-                <li>
-                    <div class="menu">
-                        <img src="img/logo.svg" alt="logo" class="logo">
-                        <a href="javascript:void(0)" class="closeBtn">
-                            <div class="menu_inter" onmouseover="menu_img.src='img/menu_red.svg'" onmouseleave="this.src='img/menu.svg'" >
-                                <img src="img/menu.svg" alt="menu" class="menu_img">
-                                <h4>Меню</h4>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="head_contact">
-                        <h4 class="red">Москва</h4>
-                        <a href="">
-                            <h4>+7 955 634 45-67</h4>
-                        </a>
-                        <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
-                        <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
-                    </div>
-                </li>
-            </ul>
-        </header>
         <section id="main">
+            <header>
+                <ul>
+                    <li>
+                        <div class="menu">
+                            <img src="img/logo.svg" alt="logo" class="logo">
+                            <a href="javascript:void(0)" class="closeBtn">
+                                <div class="menu_inter">
+                                    <input id="menu-toggle" type="checkbox" />
+                                    <label class='menu-button-container' for="menu-toggle">
+                                    <div class='menu-button'></div>
+                                </label>
+                                    <ul class="menu_slide">
+                                        <li class="sl">Главная</li>
+                                        <li class="sl">Услуги</li>
+                                        <li class="sl">Наши работы</li>
+                                        <li class="sl">Почему мы?</li>
+                                        <li class="sl">Акции</li>
+                                        <li class="sl">Контакты</li>
+                                    </ul>
+                                    <h4>Меню</h4>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="head_contact">
+                            <h4 class="red">Москва</h4>
+                            <a href="">
+                                <h4>+7 955 634 45-67</h4>
+                            </a>
+                            <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                            <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+                        </div>
+                    </li>
+                </ul>
+            </header>
+        
             <div class="main_content">
                 <div class="main_text">
                     <h1 class="red">Мы знаем толк!</h1>
