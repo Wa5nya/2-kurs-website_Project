@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dying cars</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="action.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <section id="main">
+            <header>
+                <ul>
+                    <li>
+                        <div class="menu">
+                            <img src="img/logo.svg" alt="logo" class="logo">
+                            <a href="javascript:void(0)" class="closeBtn">
+                                <div class="menu_inter">
+                                    <input id="menu-toggle" type="checkbox" />
+                                    <label class='menu-button-container' for="menu-toggle">
+                                    <div class='menu-button'></div>
+                                </label>
+                                    <ul class="menu_slide">
+                                        <!-- <li class="sl"><a href="" >Главная</a></li> -->
+                                        <!-- <li class="sl">Услуги</li>
+                                        <li class="sl">Наши работы</li>
+                                        <li class="sl">Почему мы?</li>
+                                        <li class="sl">Акции</li>
+                                        <li class="sl">Контакты</li> -->
+                                    </ul>
+                                    <h4>Меню</h4>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="head_contact">
+                            <h4 class="red">Москва</h4>
+                            <a href="">
+                                <h4>+7 955 634 45-67</h4>
+                            </a>
+                            <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                            <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+                        </div>
+                    </li>
+                </ul>
+            </header>
+        
+            <div class="main_content">
+                <div class="main_text">
+                    <h1 class="red">Покраска однотон</h1>
+                    <h3 class="white">Покраска автомобилей во всевозможные цвета и винилография!</h3>
+                    <button class="request_btn">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2 class="white">Услуги</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div info_card>
+                            <img src="img/aerography.jpg" alt="blue_car" class="product_img">
+                            <p class="white">от 55.000р.</p>
+                        </div>
+                        <div class="card_text">
+                            <p class="product_text">Аэрография</p>
+                            <p class="white"> Искусство преображения экстерьера автомобиля с использованием специализированных красок и техник аэрографа. </p>
+                            <a class="white card_btn" href="">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div info_card>
+                            <img src="img/vinilography2.jpg" alt="blue_car" class="product_img">
+                            <p class="white">от 100.000р.</p>
+                        </div>
+                        <div class="card_text">
+                            <p class="product_text">Винилография</p>
+                            <p class="white"> Обклейка авто виниловой плёнкой. Получается красиво, недорого и при желании — легко снять. Качественная винилография на кузов авто: капот, крышу, двери и багажник. </p>
+                            <a class="white card_btn" href="">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </div>
+    <div class="background two"></div>
+    <div class="container">
+        <section id="sourses">
+            <h2 class="red">Краска и плёнка, с которой мы работаем</h2>
+            <div class="sourse_content">
+                <img src="img/airsystem.png" alt="airsystem" class="sours">
+                <img src="img/xpel.png" alt="xpel" class="sours">
+                <img src="img/kpmf.png" alt="kpmf" class="sours">
+                <img src="img/Suntek.png" alt="suntek" class="sours">
+            </div>        
+        </section>
+        <section id="portfolio">
+            <h2 class="white">Как происходит процедура оклейки/покраски</h2>
+            <div class="info_content">
+                <ul class="white">Этап 1. Оценка работ
+                        <li>Осмотр машины</li>
+                        <li>Выбор пленки/Краски, цвета</li>
+                        <li>Варианты оклейки/покраски</li>
+                        Этап 2. Подготовительные работы
+                        <li>Снятие деталей. Чаще всего снимают молдинги, фары, дверные ручки, антенны, замки, спойлеры, пластиковые накладки, шильдики и тому подобное</li>
+                        <li>Удаление самых мелких вкраплений такие как битум, дорожный разметка</li>
+                        <li>Обработка поверхности</li>
+                        Этап 3. Нанесение пленки/краски
+                        <li>Наклеивается винил/Наносится краска</li>
+                        <li>Удаляется воздух</li>
+                        <li>Удаляется вода (если оклейка происходит не на сухую поверхность)</li>
+                        <li>Отрезается лишнее</li>
+                        Этап 4. Фиксация
+                        <li>Нанесение специального средства/Лака для краски</li>
+                        <li>Фиксация пленки</li>
+                        <li>Прогревание техническим феном</li>
+                        Этап 5. Проверка
+                        <li>Визуальный осмотр</li>
+                        <li>Установка снятых деталей</li>
+                        Этап 6. Важный этап
+                        Мы просим вас приехать к нам через 2 недели, чтобы удостовериться, что 
+                        <li>С пленкой/краской все хорошо</li>
+                        <li>Устранение недостатков, если таковые имеются</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="background three" id="back_th"></div>
+    <div class="container">
+        <section id="reviews">
+            <h2 class="red">Вы можете в этом убедиться!</h2>
+            <div class="review_content">
+                <video src="img/video.mp4"  controls></video>
+                <p class="white">Небольшой отчёт о нашей работе, запечатлённый на камеру, для вашего спокойствия!</p>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2 class="white">Некоторые наши работы</h2>
+            <div class="work_content">
+                <div class="let">
+                    <img src="img/work1.jpg" alt="example" class="ex">
+                </div>
+                <div class="let">
+                    <img src="img/work2.jpg" alt="example" class="ex">
+                </div>
+                <div class="let">
+                    <img src="img/work3.jpg" alt="example" class="ex">
+                </div>
+                <div class="let">
+                    <img src="img/work4.jpg" alt="example" class="ex">
+                </div>
+                <div class="let">
+                    <img src="img/work5.jpg" alt="example" class="ex">
+                </div>
+                <div class="let">
+                    <img src="img/work6.jpg" alt="example" class="ex">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="background four"></div>
+    <div class="container">
+        <section>
+            <h2 class="red">Свяжитесь с нами!</h2>
+            <div class="cont_content">
+                <div class="cont_text">
+                    <a href=""><p class="white">+7 955 634 45-67</p></a>
+                    <a href="color_up@mail.ru"><p class="white">color_up@mail.ru</p></a>
+                </div>
+                <button class="request_btn">Оставить заявку</button>
+            </div>
+            
+        </section>
+        <footer>
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <div class="foot_content">
+                <h4 class="red">Москва</h4>
+                <a href="">
+                    <h4>+7 955 634 45-67</h4>
+                </a>
+                <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let blocks = document.querySelectorAll('section');
+            function checkBlocksVisibility() {
+                let windowHeight = window.innerHeight;
+                blocks.forEach(block => {
+                    let blockPosition = block.getBoundingClientRect().top;
+                    if (blockPosition < windowHeight - 100) {
+                        block.style.opacity = "1";
+                        block.style.transform = "translateY(0)";
+                    }
+                });
+            }
+            checkBlocksVisibility();
+            window.addEventListener('scroll', function() { checkBlocksVisibility(); });
+        });
+
+
+
+        let scene;
+        function init() {
+            scene = new THREE.Scene();
+        }
+     </script>
+
+</body>
+</html>
