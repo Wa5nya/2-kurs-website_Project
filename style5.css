@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
     position:absolute;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 1000px;
     width: 100%;
     z-index: -1;
     display: flex;
@@ -115,7 +115,7 @@ h4:hover{
 h1 {
     font-family: "RussoOne";
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 
 h3 {
@@ -256,10 +256,24 @@ ul{
     filter: brightness(60%);
 }
 
-.card h3{
+.card div{
     position: absolute;
     z-index: 100;
     margin: 35px;
+    width: 342px;
+}
+
+.card div a{
+    font-size: 24px;
+    font-family: "Cyrge";
+    font-weight: 100;
+    border: solid white 2px;
+    padding:18px 25px;
+}
+
+.card div a:hover{
+    color: #C7080C;
+    border-color: #C7080C;
 }
 
 
@@ -270,6 +284,18 @@ ul{
     height: 328px;
 }
 
+
+.card h3{
+    line-height: 1.6;
+}
+
+.cards{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 1098px;
+}
 
 html{
     scroll-behavior: smooth;
@@ -291,105 +317,105 @@ html{
 
 
 .menu_slide {
-list-style: none;
-margin: 0;
-padding: 0;
-position: absolute;
-top: -100%;
-left: 0;
-width: 100%;
-background-color: #52656d;
-z-index: 10;
-transition: top 0.3s ease;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #52656d;
+    z-index: 10;
+    transition: top 0.3s ease;
 }
 
 .menu_slide li a{
-color: white;
-font-size: 20px;
-font-family: "RussoOne";
-font-weight: 100;
+    color: white;
+    font-size: 20px;
+    font-family: "RussoOne";
+    font-weight: 100;
 }
 
 .menu_slide li {
-padding: 10px;
-text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 .menu_slide li:hover {
-background-color: #708690;
+    background-color: #708690;
 }
 
 #menu-toggle:checked ~ .menu_slide {
-top: 130px;
+    top: 130px;
 }
 
 /* Закрытие меню */
 .closeBtn {
-display: block;
+    display: block;
 }
 
 .menu-button-container {
-display: inline-block;
-cursor: pointer;
-width: 30px;
-height: 30px;
-position: relative;
-margin-right: 30px;
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 30px;
 }
 
 .menu-button-container .menu-button {
-background-color: #fff;
-height: 9px;
-width: 64px;
-position: absolute;
-top: 50%;
-left: 0;
-transform: translateY(-50%);
-transition: all 0.3s ease;
+    background-color: #fff;
+    height: 9px;
+    width: 64px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button:before {
-transform: translateY(0) rotate(90deg);
+    transform: translateY(0) rotate(90deg);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button:after {
-transform: translateY(0) rotate(90deg);
+    transform: translateY(0) rotate(90deg);
 }
 
 .menu-button-container .menu-button:before,
 .menu-button-container .menu-button:after {
-content: "";
-position: absolute;
-background-color: #fff;
-height: 9px;
-width: 64px;
-transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 9px;
+    width: 64px;
+    transition: all 0.3s ease;
 }
 
 .menu-button-container .menu-button:before {
-top: -16px;
+    top: -16px;
 }
 
 .menu-button-container .menu-button:after {
-top: 16px;
+    top: 16px;
 }
 
 
 .und_menu:hover
-  .menu-button,
-  .und_menu:hover
-  .menu-button::after,
-  .und_menu:hover
-  .menu-button::before{
-    background-color: #C7080C;
-  }
+      .menu-button,
+      .und_menu:hover
+      .menu-button::after,
+      .und_menu:hover
+      .menu-button::before{
+        background-color: #C7080C;
+      }
 
 
 .und_menu{
-width: 200px;
-display: flex;
+    width: 200px;
+    display: flex;
 }
