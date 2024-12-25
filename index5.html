@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <section id="main">
+            <header>
+                <ul>
+                    <li>
+                        <div class="menu">
+                            <img src="img/logo.svg" alt="logo" class="logo">
+                            <div class="und_menu">
+                                <input id="menu-toggle" type="checkbox" />
+                                <label class="menu-button-container" for="menu-toggle">
+                                    <div class="menu-button"></div>
+                                </label>
+                                <ul class="menu_slide">
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li class="product_men"><a href="#products">Услуги</a></li> 
+                                    <li><a href="#portfolio">Наши работы</a></li>
+                                    <li><a href="#advantages">Почему мы?</a></li>
+                                    <li><a href="#contacts">Контакты</a></li>
+                                    <li><a href="index5.html">Акции</a></li>
+                                    <li><a href="index6.html">Новости</a></li>
+                                </ul>
+                                <h4>Меню</h4>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="head_contact">
+                            <h4 class="red">Москва</h4>
+                            <a href="">
+                                <h4>+7 955 634 45-67</h4>
+                            </a>
+                            <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                            <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+                        </div>
+                    </li>
+                </ul>
+            </header>
+        
+            <div class="main_content">
+                <div class="main_text">
+                    <h1 class="red">Выгодные предложения</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <div>
+                                <h3 class="white">Предновогодние скидки!</h3>
+                                <a class="white card_btn" href="">Подробнее</a>
+                            </div>
+                            <img src="img/new_year .jpg" alt="new_year">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <div class="foot_content">
+                <h4 class="red">Москва</h4>
+                <a href="">
+                    <h4>+7 955 634 45-67</h4>
+                </a>
+                <a href=""><img src="img/phone.svg" alt="call" class="contact_img" onmouseover="this.src='img/phone_red.svg'" onmouseleave="this.src='img/phone.svg'"></a>
+                <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        const testimonials = document.querySelector('.testimonials');
+        const scroller = testimonials.querySelector('.scroller');
+        const nextBtn = testimonials.querySelector('.btn.next');
+        const prevBtn = testimonials.querySelector('.btn.prev');
+        const itemWidth = testimonials.querySelector('.item').clientWidth;
+       
+        nextBtn.addEventListener('click', scrollToNextItem);
+        prevBtn.addEventListener('click', scrollToPrevItem);
+       
+        function scrollToNextItem() {
+            scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
+        };
+        function scrollToPrevItem() {
+            scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let blocks = document.querySelectorAll('section');
+            function checkBlocksVisibility() {
+                let windowHeight = window.innerHeight;
+                blocks.forEach(block => {
+                    let blockPosition = block.getBoundingClientRect().top;
+                    if (blockPosition < windowHeight - 100) {
+                        block.style.opacity = "1";
+                        block.style.transform = "translateY(0)";
+                    }
+                });
+            }
+            checkBlocksVisibility();
+            window.addEventListener('scroll', function() { checkBlocksVisibility(); });
+        });
+
+
+
+        let scene;
+        function init() {
+            scene = new THREE.Scene();
+        }
+     </script>
+
+</body>
+
+</html>
