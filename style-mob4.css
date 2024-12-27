@@ -66,7 +66,7 @@
         position:absolute;
         background-size: cover;
         background-position: center;
-        height: 750px;
+        height: 900px;
         width: 100%;
         z-index: -1;
         display: flex;
@@ -486,7 +486,6 @@
         height: 70px;
         display: flex;
         justify-content: center;
-        align-items: center;
 
      }
     
@@ -555,7 +554,7 @@
     }
     
     .background.four{
-        height: 450px;
+        height: 700px;
     }
     
     .ex{
@@ -620,5 +619,24 @@
     
     .foot_content h4{
         display: none;
+    }
+
+    .main_content input{
+        width: 250px;
+        height: 45px;
+        font-size: 20px;
+        font-family: "Cyrge";
+        border: #C7080C 2px solid;
+    }
+
+    .inp_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 170px;
+    }
+
+    .algo_content{
+        color: white;
     }
 }

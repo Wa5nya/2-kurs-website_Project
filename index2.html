@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dying cars</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style-mob2.css">
     <script src="action.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
+    <div class="forma">
+        <form action="form.php" id="btn_req" method="post">
+            <button type="button" class="btn_can" onclick="toggle_cancel('id_of_element_to_toggle')"></button>
+            <h3 class="white">Оставьте заявку!</h3>
+            <input type="text" placeholder="Имя" name="name">
+            <input type="text" placeholder="+7" name="number">
+            <select name="product" id="product">
+                <option value="--">--Выберите услугу--</option>
+                <option value="paint_odnoton">Покраска автомобиля однотон</option>
+                <option value="design">Дизайн</option>
+                <option value="brend" onclick="toggle_choose('id_of_element_to_toggle')">Брендирование коммерческого авто</option>
+            </select>
+            <div id="choice">
+                <div>
+                    <input type="radio" id="aero" name="way" value="aero" checked class="rad"/>
+                    <label for="aero">Аэрография</label>
+                </div>
+                <div>
+                    <input type="radio" id="vinilo" name="way" value="vinilo" class="rad"/>
+                    <label for="vinilo">Винилография</label>
+                </div>
+            </div>
+            <textarea name="comm" class="comm" placeholder="Комментарий"></textarea>
+            <input type="submit" value="Отправить заявку">
+        </form>
+    </div>
+
     <div class="background"></div>
     <div class="container">
         <section id="main">
@@ -51,7 +80,7 @@
                 <div class="main_text">
                     <h1 class="red">Покраска однотон</h1>
                     <h3 class="white">Покраска автомобилей во всевозможные цвета и винилография!</h3>
-                    <button class="request_btn">Заказать</button>
+                    <button type="button" class="request_btn" onclick="toggle_visibility('id_of_element_to_toggle')">Заказать</button>
                 </div>
             </div>
         </section>
@@ -66,7 +95,6 @@
                         <div class="card_text">
                             <p class="product_text">Аэрография</p>
                             <p class="white"> Искусство преображения экстерьера автомобиля с использованием специализированных красок и техник аэрографа. </p>
-                            <a class="white card_btn" href="">Рассчитать стоимость</a>
                         </div>
                     </div>
                     <div class="card">
@@ -77,7 +105,6 @@
                         <div class="card_text">
                             <p class="product_text">Винилография</p>
                             <p class="white"> Обклейка авто виниловой плёнкой. Получается красиво, недорого и при желании — легко снять. Качественная винилография на кузов авто: капот, крышу, двери и багажник. </p>
-                            <a class="white card_btn" href="">Рассчитать стоимость</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +195,7 @@
                     <a href=""><p class="white">+7 955 634 45-67</p></a>
                     <a href="color_up@mail.ru"><p class="white">color_up@mail.ru</p></a>
                 </div>
-                <button class="request_btn">Оставить заявку</button>
+                <button type="button" class="request_btn" onclick="toggle_visibility('id_of_element_to_toggle')">Оставить заявку</button>
             </div>
             
         </section>
@@ -201,13 +228,37 @@
             window.addEventListener('scroll', function() { checkBlocksVisibility(); });
         });
 
-
-
-        let scene;
-        function init() {
-            scene = new THREE.Scene();
-        }
      </script>
+
+    <script>
+        document.getElementById('product').addEventListener('change', function () {
+            const choiceDiv = document.getElementById('choice');
+            if (this.value === 'brend') {
+                choiceDiv.style.display = 'none';
+            } else {
+                choiceDiv.style.display = 'flex';
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+            var e = document.getElementById("btn_req");
+            if(e.style.display == 'flex')
+            e.style.display = 'none';
+            else
+            e.style.display = 'flex';
+        }
+    </script>
+    <script type="text/javascript">
+        function toggle_cancel(id) {
+            var b = document.getElementById("btn_req");
+            if(b.style.display == 'none')
+            b.style.display = 'flex';
+            else
+            b.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>

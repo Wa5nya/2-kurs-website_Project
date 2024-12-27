@@ -75,12 +75,12 @@
     }
     
     .background.two{
-        height: 700px;
+        height: 800px;
     }
     
     
     .background.three{
-        height: 650px;
+        height: 1700px;
     }
     
     
@@ -382,7 +382,7 @@
         font-size: 20px;
         font-family: "Cyrge";
         padding:  10px 20px;
-        max-width: 240px;
+        width: 240px;
         height: 54px;
     }
 
@@ -391,10 +391,6 @@
         border-color: #C7080C;
     }
 
-
-    .card_text .request_btn{
-       opacity: 0;
-    }
 
     body:hover ~ form{
         display: none;
@@ -438,7 +434,7 @@
     /* Products */
     
     .product_img{
-        width: 295px;
+        width: 309px;
         height: 200px;
     }
     
@@ -454,87 +450,129 @@
         height: 30px;
     }
     
-    .card_btn{
-        display: none;
-    }
-
-    /* .white .request_btn{
-        width: ;
-    } */
-    
-    .card_a {
-        min-width: 100%;
-        min-height: 200px;
-    }
     
     
-     .card {
-        border: white solid 2px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 350px;
-        padding: 5px;
-
-     }
     
-     .card_text .white{
+     .testimonials .btn {
         display: none;
      }
 
-     .card_text{
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-     }
-    
-     .card p {
-        line-height: 1.6;
-     }
-    
-     .card span {
-        color: teal;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-     }
-
-     .cards{
+     .scroller{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 780px;
+        height: 950px;
      }
-
     
-    .sours{
+     .item {
         width: 309px;
-        height: 50px;
-    }
-    
-    .sourse_content{
+        height: 290px; /* To start with */
+        background-color: #0D2126; /* For demo */
+        background-color: #0D2126; /* Change the value to white */
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        height: 300px;
-    }
-    
-    .info_content ul {
-        font-family: "Cyrge";
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    video{
+     }
+    
+    
+    
+     .card img{
         width: 309px;
         height: 200px;
+        filter: brightness(60%);
+    }
+    
+    .card div{
+        position: absolute;
+        z-index: 100;
+        margin: 35px;
+        width: 309px;
+    }
+    
+    .card div a{
+        font-size: 20px;
+        font-family: "Cyrge";
+        font-weight: 100;
+        border: solid white 2px;
+        padding:14px 20px;
+    }
+    
+    .card div a:hover{
+        color: #C7080C;
+        border-color: #C7080C;
+    }
+    
+    
+    .card{
+        display: flex;
+        align-items: center;
+        width: 309px;
+        height: 328px;
+    }
+    
+    
+    .card h3{
+        line-height: 1.6;
+        width: 100px;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
+
+
+        /* Advantages */
+    
+    
+    .adv{
+        font-family: "Cyrge";
+        background-image: url(img/adv_2.png);
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        align-items: top;
+        justify-content: left;
+        background-position: cover;
+    }
+    
+    .adv p{
+        text-align: center;
+        width: 250px;
+        height: 80px;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-top: 15px;
+        margin: 0;
+    }
+    
+    .adv_up{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
+    }
+    
+    .adv_down{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
+        width: none;
+    }
+    
+    .adv_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+    }
+    
 
     /* Portfolio */
     
@@ -548,19 +586,11 @@
         display: none;
     }
     
-
-    .work_content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     
-    .background.four{
-        height: 450px;
-    }
     
     .ex{
         border: solid white 2px;
-        width: 145px;
+        width: 150px;
         height: 100px;
         margin-bottom: 30px;
     }
@@ -571,7 +601,33 @@
     }
     
     
- 
+       /* Review */
+    
+       .review{
+        width: 346px;
+        height: 421px;
+        background-image: url(img/revi_1.png);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        padding: 23px;
+        border: #C7080C solid 2px;
+    }
+    
+    #rev_2{
+        background-image: url(img/revi_2.png);
+    }
+    
+    #rev_3{
+        background-image: url(img/revi_3.png) ;
+
+    }
+    
+    .quot{
+        object-fit: none;
+        position: absolute;
+    }
+    
     h5{
         font-size: 20px;
         font-family: "Cyrge";
@@ -579,6 +635,19 @@
         margin-bottom: 25px;
     }
     
+    .review p {
+        font-size: 14px;
+        line-height: 1.7;
+    
+    }
+    
+    .review_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 1300px;
+    }
     
        /* Contacts */
     
