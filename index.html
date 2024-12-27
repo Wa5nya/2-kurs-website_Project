@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dying cars</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mob.css">
     <script src="action.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -32,7 +33,6 @@
                     <label for="vinilo">Винилография</label>
                 </div>
             </div>
-            <!-- <input type="text" placeholder="Комментарий" class="comm"> -->
             <textarea name="comm" class="comm" placeholder="Комментарий"></textarea>
             <input type="submit" value="Отправить заявку">
         </form>
@@ -153,6 +153,7 @@
                 </div>
             </div>        
         </section>
+        
         <section id="portfolio">
             <h2 class="white">Портфолио</h2>
             <div class="port_content">
@@ -236,7 +237,7 @@
                     <a href="color_up@mail.ru"><p class="white">color_up@mail.ru</p></a>
                     <a href="https://yandex.ru/maps/213/moscow/house/2_ya_roshchinskaya_ulitsa_3/Z04YcAZkSkABQFtvfXtxeH5rYw==/?indoorLevel=1&ll=37.614357%2C55.709287&z=16.96"><p class="white">55.709287, 37.614356</p></a>
                 </div>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A242a9b4a1cf2e150cc7353e02f116592a24cb60882db31c5fd8dee8e503307e9&amp;width=470&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" class="map" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A242a9b4a1cf2e150cc7353e02f116592a24cb60882db31c5fd8dee8e503307e9&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </section>
         <footer>
@@ -250,7 +251,7 @@
                 <a href=""><img src="img/telegram.svg" alt="telegram" class="contact_img" onmouseover="this.src='img/telegram_red.svg'" onmouseleave="this.src='img/telegram.svg'"></a>
             </div>
         </footer>
-    </div>
+    </div> 
     <script>
         const testimonials = document.querySelector('.testimonials');
         const scroller = testimonials.querySelector('.scroller');
@@ -283,13 +284,6 @@
             checkBlocksVisibility();
             window.addEventListener('scroll', function() { checkBlocksVisibility(); });
         });
-
-
-
-        let scene;
-        function init() {
-            scene = new THREE.Scene();
-        }
 
         
      </script>
