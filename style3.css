@@ -619,4 +619,98 @@
     width: 200px;
     display: flex;
     }
+
+    form {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 600px;
+        width: 472px;
+        background-color: #55666E;
+        background-position: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: fixed;
+        z-index: 100;
+    
+        
+    }
+    
+    form input {
+        width: 415px;
+        height: 48px;
+        border: #C7080C solid 2px;
+        font-family: "Cyrge";
+        font-size: 18px;
+    }
+    
+    
+    form .comm{
+        width: 415px;
+        height: 128px;
+        border: #C7080C solid 2px;
+        font-family: "Cyrge";
+        font-size: 18px;
+    }
+    
+    form select{
+        width: 422px;
+        height: 55px;
+        border: #C7080C solid 2px;
+        font-family: "Cyrge";
+        font-size: 18px;
+    }
+    
+    form label{
+        font-family: "Cyrge";
+        font-size: 18px;
+        color: white;
+    }
+    
+    .rad{
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        accent-color: #C7080C;
+    }
+    
+    
+    
+    form div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .forma{
+        display: flex;
+        justify-content: center;
+    }
+
+    .request_btn{
+        background-color: transparent;
+        color: white;
+        border: white 2px solid;
+        font-size: 24px;
+        font-family: "Cyrge";
+        padding:  18px 42px;
+        width: 280px;
+        height: 64px;
+    }
+    
+    .request_btn:hover{
+        color: #C7080C;
+        border-color: #C7080C;
+    }
+
+    .btn_can {
+        width: 25px;
+        height: 25px;
+        margin-left: 400px;
+    }
+    
+    .btn_can:hover{
+        background-color: #C7080C;
+    }
 }

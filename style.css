@@ -729,6 +729,10 @@
     .choice{
         display: flex;
     }
+
+    canvas{
+        height: 300px;
+    }
 }
 
 
