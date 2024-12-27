@@ -9,23 +9,6 @@
 }
 
 
-/* #products {
-    margin-bottom: 140px;
-}
-
-#portfolio{
-    margin-top: 90px;
-    margin-bottom: 90px;
-}
-
-#reviews{
-    padding-top: 90px;
-    margin-bottom: 90px;
-}
-
-#contacts{
-    margin-top: 90px;
-} */
 
 section{
 
@@ -323,10 +306,11 @@ html{
     position: absolute;
     top: -100%;
     left: 0;
-    width: 100%;
+    width: 1098px;
     background-color: #52656d;
     z-index: 10;
     transition: top 0.3s ease;
+    margin-left: 215px; 
 }
 
 .menu_slide li a{
@@ -418,4 +402,5 @@ html{
 .und_menu{
     width: 200px;
     display: flex;
+    justify-content: center;
 }
